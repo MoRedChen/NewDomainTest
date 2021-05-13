@@ -1,0 +1,30 @@
+.form-main {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eee;
+    margin: 60px 0px;
+    font-family: 'cwTeXFangSong', serif;
+    padding: 30px;
+}
+
+.form-group>label {
+    padding: 5px;
+}
+
+small {
+    margin: 0px 5px;
+    color: rgba(200, 50, 50, 1);
+}
+
+.form-button {
+    margin: 30px 0px;
+}
+
+.signUp {
+    color: rgba(100, 100, 100, 1);
+    font-weight: bold;
+}
+
+.signUp>a {
+    text-decoration: none;
+}

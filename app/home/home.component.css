@@ -1,0 +1,30 @@
+.breadcrumb {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb>li>a {
+    text-decoration: none;
+}
+
+.thumbnail {
+    background-color: rgba(20, 20, 45, 0.9);
+    border-radius: 25px;
+    padding: 10px;
+    height: 100%;
+}
+
+.thumbnail a>img {
+    border-radius: 20px;
+}
+
+.thumbnail>.caption {
+    color: rgba(255, 255, 255, 1);
+}
+
+.thumbnail>.caption>a,
+.thumbnail>.caption>a:hover {
+    color: rgba(200, 200, 200, 1);
+    font-weight: bold;
+    text-decoration: none;
+}

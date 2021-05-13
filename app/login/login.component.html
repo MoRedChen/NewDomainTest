@@ -1,0 +1,51 @@
+<!-- <button routerLink="/home" [queryParams]="{name: 'MoRed'}">登入</button> -->
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2"></div>
+        <div class="col-xs-12 col-sm-8">
+            <div class="login-form">
+                <div class="form-main">
+
+                    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+                        <div class="form-title">
+                            <h1 class="text-center">登入</h1>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="userMail"><span class="fa fa-envelope"></span> 帳號</label>
+                            <input type="email" name="" id="userMail" placeholder="請輸入帳號(信箱)" class="form-control">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="userPassword"><span class="fa fa-lock"></span> 密碼</label>
+                            <input type="password" name="" id="userPassword" placeholder="請輸入密碼" class="form-control">
+                        </div>
+
+                        <div class="form-button">
+                            <button (click)="login()" class="btn btn-info btn-block">登入</button>
+                        </div>
+
+                        <div class="signUp">
+                            還不是會員？<a [routerLink]="'/signup'">點我註冊</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-2"></div>
+    </div>
+    <!-- Row -->
+</div>
+<!--Container -->

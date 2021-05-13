@@ -1,0 +1,104 @@
+<!-- <ul>
+    <li><a [routerLink]="'/home'" routerLinkActive="active">Home</a></li>
+    <li><a [routerLink]="'/about'" routerLinkActive="active">About</a></li>
+    <li><a [routerLink]="'/product'" routerLinkActive="active">Product</a></li>
+</ul> -->
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <!-- logo區 -->
+    <a [routerLink]="'/home'" class="navbar-brand"><img src="assets\imgs\logo.png" width="32" height="32" class="img-circle"></a>
+
+    <!-- 左選單 -->
+    <ul class="nav navbar-nav">
+        <li><a [routerLink]="'/about'" routerLinkActive="active">About us</a></li>
+        <li><a [routerLink]="'/product'" routerLinkActive="active">Product</a></li>
+    </ul>
+
+    <!-- 搜尋表單 -->
+    <!-- <form class="navbar-form navbar-right" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="請輸入關鍵字">
+    </div>
+    <button type="submit" class="btn btn-default">搜尋</button>
+</form> -->
+
+    <!-- 右選單 -->
+    <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#">Guess 您好</a></li>
+    <li><a href="#">登出</a></li>
+    <li><a href="#">個人設定</a></li> -->
+        <li><a [routerLink]="'/signup'">註冊</a></li>
+        <li><a [routerLink]="'/login'">登入</a></li>
+    </ul>
+</nav>
+
+
+
+<div id="carousel-id" class="carousel slide" data-ride="carousel">
+    <!-- 幻燈片小圓點區 -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+    </ol>
+    <!-- 幻燈片主圖區 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="https://picsum.photos/2800/700/?random=1">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>First page</h1>
+                    <p>This is first page~</p>
+                    <p><a class="btn btn-lg btn-success" href="#" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://picsum.photos/2800/700/?random=2">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Second page</h1>
+                    <p>This is second page~</p>
+                    <p><a class="btn btn-lg btn-success" href="#" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/2800/700/?random=3">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Third page</h1>
+                    <p>This is third page~</p>
+                    <p><a class="btn btn-lg btn-success" href="#" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 上下頁控制區 -->
+    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a [routerLink]="'/home'"> 畸不可失</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>

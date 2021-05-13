@@ -1,0 +1,22 @@
+.breadcrumb {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb>li>a {
+    text-decoration: none;
+}
+
+.card-title {
+    font-size: 35px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.imgmax200 {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+.breadcrumb {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb>li>a {
+    text-decoration: none;
+}
+
+
+/* ---------- 內文三區塊 ------------------------- */
+
+.row-bg {
+    margin: 0;
+}
+
+
+/* 整體 */
+
+.jumbotron p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* 名稱由來 */
+
+.bg1 {
+    background-image: url(src\assets\imgs\bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 600px;
+    color: rgba(8, 8, 8, 1);
+}
+
+
+/* 發想理念 */
+
+.bg2 {
+    background-image: url(src\assets\imgs\bg2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 600px;
+    color: rgba(230, 230, 230, 1);
+}
+
+
+/* 未來展望 */
+
+.bg3 {
+    background-image: url(src\assets\imgs\bg3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 600px;
+    color: rgba(8, 8, 8, 1);
+}
+
+
+/* -------------------------------------------------- */
