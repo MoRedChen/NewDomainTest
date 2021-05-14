@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
         /* 頁面顏色 */
@@ -22,6 +22,62 @@
             font-family: 'cwTeXKai', serif;
             font-size: 18px;
         }
+        /* animate start */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate {
+            -moz-transition: 2s ease-in-out;
+            -webkit-transition: 2s ease-in-out;
+            transition: 2s ease-in-out;
+            -moz-animation: fadeIn ease-in 1;
+            -webkit-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+        
+        #phone.animate {
+            -webkit-transform: translate(14em, 0);
+            -moz-transform: translate(14em, 0);
+            transform: translate(14em, 0);
+        }
+        
+        #monitor.animate {
+            -webkit-transform: translate(3em, 0);
+            -moz-transform: translate(3em, 0);
+            transform: translate(3em, 0);
+        }
+        /* animate end */
         /* ---------- navbar 相關 ------------------------- */
         /* 整體設定 */
         
@@ -118,7 +174,7 @@
         /* 一 */
         
         .bg1 {
-            background-color: rgba(50, 50, 50, 1);
+            background-color: rgba(8, 8, 8, 1);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -155,7 +211,7 @@
         /* 三 */
         
         .bg3 {
-            background-color: rgba(8, 8, 8, 1);
+            background-color: rgba(50, 50, 50, 1);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -169,6 +225,15 @@
             background-color: rgba(8, 8, 8, 0.5);
             padding: 50px;
             border-radius: 20px;
+            transition: 0.5s;
+        }
+        
+        .bg3-text:hover {
+            color: rgba(8, 8, 8, 1);
+            background-color: rgba(230, 230, 230, 1);
+            padding: 50px;
+            border-radius: 20px;
+            font-weight: bold;
         }
         /* 四 */
         
@@ -284,7 +349,7 @@
             <div class="item item-one active">
                 <!-- <img src="https://picsum.photos/2800/2800/?random=1"> -->
                 <div class="container">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption animate">
                         <h1>First page</h1>
                         <p>This is first page~</p>
                         <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
@@ -295,7 +360,7 @@
             <div class="item item-two">
                 <!-- <img src="https://picsum.photos/2800/700/?random=2"> -->
                 <div class="container">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption animate">
                         <h1>Second page</h1>
                         <p>This is second page~</p>
                         <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
@@ -305,7 +370,7 @@
             <div class="item item-three">
                 <!-- <img src="https://picsum.photos/2800/700/?random=3"> -->
                 <div class="container">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption animate">
                         <h1>Third page</h1>
                         <p>This is third page~</p>
                         <p><a class="btn btn-lg btn-transparent" href="" role="button">Button</a></p>
@@ -322,11 +387,10 @@
 
 
 
-    <br>
 
 
     <div class="row">
-        <div class="jumbotron bg1">
+        <div class="jumbotron bg1 animate">
             <div class="container">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                     <div class="bg1-text text-center">
@@ -362,8 +426,8 @@
     <div class="row">
         <div class="jumbotron bg3">
             <div class="container">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                    <div class="bg3-text text-center">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3" onload="runDemo()">
+                    <div class="bg3-text text-center slideRight">
                         <h1>Welcome</h1>
                         <br>
                         <p>This is my test website.</p>
@@ -412,6 +476,18 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $(window).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y > 300) {
+                    $('#monitor').addClass('animate');
+                    $('#phone').addClass('animate');
+                };
+
+            });
+        });
+    </script>
 </body>
 
 </html>
