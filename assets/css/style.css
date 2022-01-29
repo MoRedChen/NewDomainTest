@@ -581,6 +581,10 @@ section {
     position: relative;
 }
 
+.resume .resume-item p {
+    text-align: justify;
+}
+
 .resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
